@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+	color: white;
+}
+
+#posts {
+	list-style: none;
+}
+
+.post, .submission {
+	display: flex;
+	padding: 10px;
+	margin-left: 25%;
+	max-width: 50%;
+}
+
+.post > div, .submission div {
+	margin-right: 10px;
+	text-align: left;
+}
+
+#page-numbers {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+#page-numbers > li {
+ 	margin-right: 0.3em;
+	user-select: none;
+	cursor: pointer;
+}
+
+.active {
+	color: #FF500F;
+}
+
+.inactive {
+	color: blue;
+}
+
+.thumbnail {
+	width: 100px;
+	height: 100px;
+}
+
+.comments-links {
+	color: grey;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover > h1 {
+	color:black;
+}
+
+.comments-list {
+	text-align: left;
+	padding: 10px;
+	background-color: #F5F5F5;
+}
+
+.comments-list2 {
+	text-align: left;
+	margin-left: 20px;
+	padding: 10px;
+	background-color: white;
+}
+
+
+.user {
+	color: #369;
+	font-size: small;
+	font-weight: bold;
+}
+
+.comments-container {
+	margin-left: 20%;
+	max-width: 60%;
+}
+
+.comments-list p {
+	margin: 5px;
+	padding: 0;
+}
+
+
+
