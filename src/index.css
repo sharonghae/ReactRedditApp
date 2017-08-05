@@ -8,15 +8,11 @@ h1 {
 	color: white;
 }
 
-#posts {
-	list-style: none;
-}
-
 .post, .submission {
 	display: flex;
 	padding: 10px;
-	margin-left: 25%;
-	max-width: 50%;
+	margin-left: 10%;
+	max-width: 80%;
 }
 
 .post > div, .submission div {
@@ -36,11 +32,11 @@ h1 {
 	cursor: pointer;
 }
 
-.active {
+.active-page {
 	color: #FF500F;
 }
 
-.inactive {
+.inactive-page {
 	color: blue;
 }
 
@@ -57,23 +53,24 @@ a {
 	text-decoration: none;
 }
 
-a:hover > h1 {
+h1:hover {
 	color:black;
 }
 
-.comments-list {
+.comments-list, .comments-list2 {
 	text-align: left;
 	padding: 10px;
+	background-color: #F5F5F5;
+	max-width: 100%;
+}
+
+.comments-list {
 	background-color: #F5F5F5;
 }
 
 .comments-list2 {
-	text-align: left;
-	margin-left: 20px;
-	padding: 10px;
 	background-color: white;
 }
-
 
 .user {
 	color: #369;
@@ -82,14 +79,10 @@ a:hover > h1 {
 }
 
 .comments-container {
-	margin-left: 20%;
-	max-width: 60%;
+	margin-left: 10%;
+	max-width: 80%;
 }
 
-.comments-list p {
-	margin: 5px;
-	padding: 0;
-}
 
 
 

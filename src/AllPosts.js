@@ -47,12 +47,12 @@ export default class AllPosts extends Component {
 
 		const renderPosts = currentPosts.map((post, index) => {
 			return (
-				<li key={index} className="post">
+				<div key={index} className="post">
 					<div>{(index + 1)  + (postsPerPage * (currentPage - 1))}</div>
 					<div>
 						<a href={post.url}>
 							<img 
-								src={post.thumbnail === "default"? placeholder : post.thumbnail} 
+								src={post.preview? post.thumbnail : placeholder} 
 								className="thumbnail"
 								alt=""
 							/>
@@ -68,7 +68,7 @@ export default class AllPosts extends Component {
 							{post.num_comments} comments
 						</Link>
 					</div>
-				</li>
+				</div>
 			)
 		});
 
@@ -83,7 +83,7 @@ export default class AllPosts extends Component {
 				<li 
 					key={number}
 					id={number}
-					className={(number === currentPage)? "active" : "inactive"}
+					className={(number === currentPage)? "active-page" : "inactive-page"}
 					onClick={this.handleClick}
 				>
 					{number}
@@ -96,9 +96,9 @@ export default class AllPosts extends Component {
         <p className="App-intro">
           Hot Reddit Posts
         </p>
-				<ol id="posts">
+				<div id="posts">
 					{renderPosts}
-				</ol>
+				</div>
 				<ul id="page-numbers">
 					{renderPageNumbers}
 				</ul>

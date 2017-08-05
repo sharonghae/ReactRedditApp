@@ -41,7 +41,7 @@ export default class Post extends Component {
 					<div>
 						<a href={submission.url}>
 							<img 
-								src={submission.thumbnail === "default"? placeholder : submission.thumbnail} 
+								src={submission.preview? submission.thumbnail : placeholder} 
 								className="thumbnail"
 								alt=""
 							/>
